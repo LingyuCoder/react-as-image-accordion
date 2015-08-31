@@ -3,12 +3,10 @@ import ReactMixin from 'react-mixin';
 
 class ImageAccordionItem extends React.Component {
   static propTypes = {
-    src: React.PropTypes.string,
-    onClick: React.PropTypes.func
+    src: React.PropTypes.string
   };
   static defaultProps = {
     src: '',
-    onClick: () => {}
   };
   constructor() {
     super();
@@ -18,7 +16,7 @@ class ImageAccordionItem extends React.Component {
     this.props.src && (style.backgroundImage = `url(${this.props.src})`);
     return (
       <div style={style} className="react-as-image-accordion-item">
-        <span className="react-as-image-accordion-item-content" onClick={this.props.onClick}>
+        <span className="react-as-image-accordion-item-content">
           {this.props.children}
         </span>
       </div>

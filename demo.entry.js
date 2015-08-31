@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cda1d1767b0e236f351c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "df689ed0d5a975566ba8"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -7985,7 +7985,7 @@
 	        _react2['default'].createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+	            'Write Something here'
 	        )
 	    ),
 	    _react2['default'].createElement(
@@ -7999,7 +7999,7 @@
 	        _react2['default'].createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+	            'Write Something here'
 	        )
 	    ),
 	    _react2['default'].createElement(
@@ -8013,7 +8013,7 @@
 	        _react2['default'].createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+	            'Write Something here'
 	        )
 	    ),
 	    _react2['default'].createElement(
@@ -8027,7 +8027,7 @@
 	        _react2['default'].createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+	            'Write Something here'
 	        )
 	    ),
 	    _react2['default'].createElement(
@@ -8041,7 +8041,7 @@
 	        _react2['default'].createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+	            'Write Something here'
 	        )
 	    ),
 	    _react2['default'].createElement(
@@ -8055,7 +8055,7 @@
 	        _react2['default'].createElement(
 	            'p',
 	            null,
-	            'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+	            'Write Something here'
 	        )
 	    )
 	), document.getElementById('demo'));
@@ -31700,7 +31700,7 @@
 	        { style: style, className: 'react-as-image-accordion-item' },
 	        _reactAddons2['default'].createElement(
 	          'span',
-	          { className: 'react-as-image-accordion-item-content', onClick: _this.props.onClick },
+	          { className: 'react-as-image-accordion-item-content' },
 	          _this.props.children
 	        )
 	      );
@@ -31712,15 +31712,13 @@
 	  _createClass(ImageAccordionItem, null, [{
 	    key: 'propTypes',
 	    value: {
-	      src: _reactAddons2['default'].PropTypes.string,
-	      onClick: _reactAddons2['default'].PropTypes.func
+	      src: _reactAddons2['default'].PropTypes.string
 	    },
 	    enumerable: true
 	  }, {
 	    key: 'defaultProps',
 	    value: {
-	      src: '',
-	      onClick: function onClick() {}
+	      src: ''
 	    },
 	    enumerable: true
 	  }]);

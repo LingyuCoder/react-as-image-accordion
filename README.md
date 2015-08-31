@@ -1,46 +1,87 @@
-# react-webpack-boilerplate
+# react-as-image-accordion
 
-A boilerplate of React and Webpack
+一个React手风琴风格图文展示组件
 
-## Install
+[DEMO](http://lingyucoder.github.io/react-as-image-accordion/demo/demo.html)
 
-```bash
-$ git clone git@github.com:LingyuCoder/react-webpack-boilerplate.git
-$ cd react-webpack-boilerplate
-$ npm install
+## 安装
+
+```
+npm install --save react-as-image-accordion
 ```
 
-## Usage
+## 使用
 
-```bash
-.
-├── LICENSE
-├── README.md
-├── demo
-│   ├── demo.html
-│   └── demo.jsx
-├── package.json
-├── server.js
-├── src
-│   ├── index.js
-│   ├── lib
-│   │   └── Component.jsx
-│   └── style
-│       └── index.less
-└── webpack.config.js
+```javascript
+import React from 'react';
+import {
+	ImageAccordion,
+	ImageAccordionItem
+} from 'react-as-image-accordion';
+
+React.render(
+  <ImageAccordion width={900} height={250}>
+  	<ImageAccordionItem src="http://michaelferry.com/assets/accordion1.jpg">
+  		<h2>Part I</h2>
+      <p>Write Something here</p>
+  	</ImageAccordionItem>
+  	<ImageAccordionItem src="http://michaelferry.com/assets/accordion2.jpg">
+  		<h2>Part II</h2>
+      <p>Write Something here</p>
+  	</ImageAccordionItem>
+  	<ImageAccordionItem src="http://michaelferry.com/assets/accordion3.jpg">
+  		<h2>Part III</h2>
+      <p>Write Something here</p>
+  	</ImageAccordionItem>
+  	<ImageAccordionItem src="http://michaelferry.com/assets/accordion4.jpg">
+  		<h2>Part IV</h2>
+      <p>Write Something here</p>
+  	</ImageAccordionItem>
+  	<ImageAccordionItem src="http://michaelferry.com/assets/accordion5.jpg">
+  		<h2>Part V</h2>
+      <p>Write Something here</p>
+  	</ImageAccordionItem>
+  	<ImageAccordionItem src="http://michaelferry.com/assets/accordion6.jpg">
+  		<h2>Part VI</h2>
+      <p>Write Something here</p>
+  	</ImageAccordionItem>
+  </ImageAccordion>,
+  document.getElementById('demo')
+);
+
 ```
 
-## Development
+## Properties
+
+### ImageAccordion
+
+```javascript
+{
+  width: React.PropTypes.number,  //宽度，默认值900
+  height: React.PropTypes.number  //高度，默认值250
+}
+```
+
+### ImageAccordionItem
+
+```javascript
+{
+  src: React.PropTypes.string // 背景图片地址
+}
+```
+
+## 开发
 
 ```bash
 $ npm start
 $ open http://127.0.0.1:3000/demo/demo.html
 ```
 
-## License
+## 协议
+
 The MIT License (MIT)
 
-Copyright (c) 2015 天镶
+Copyright (c) 2015 Lingyu Wang
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
