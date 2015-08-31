@@ -1,6 +1,6 @@
 {
   "name": "react-as-image-accordion",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "一个React手风琴风格图文展示组件",
   "main": "src/index.js",
   "scripts": {
